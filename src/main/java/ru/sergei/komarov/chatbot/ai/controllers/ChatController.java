@@ -15,7 +15,7 @@ public class ChatController {
     }
 
     @PostMapping("/getAnswer")
-    public Message getAnswer(@RequestBody Message message) {
+    public Message getAnswer(@RequestBody Message message) throws Exception {
         return languageProcessor.getAnswer(message);
     }
 
